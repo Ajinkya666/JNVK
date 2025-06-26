@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNVK</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .titleFont {
+            font-family: gstatic;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl h-9 bg-[#2d4944] flex justify-end items-center px-3">
+            <nav class="flex md:gap-5 gap-3 md:text-base text-xs md:px-5">
+                <a href="/pages/about.html" class="text-amber-50 hover:text-amber-100">About Us</a>
+                <a href="/pages/events.html" class="text-amber-50 hover:text-amber-100">Events</a>
+                <a href="/pages/contact.html" class="text-amber-50 hover:text-amber-100">Contact</a>
+            </nav>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-14">
+                <!-- Logo -->
+                <div
+                    class="flex-shrink-0 text-2xl font-bold flex justify-between titleFont items-center  text-amber-50 text-shadow-lg text-shadow-[#2d4944]">
+                    <img class="h-12 w-12 cursor-pointer " src="/public/symbol.png" alt="" />J.N.V.Kolhapur
+                </div>
+
+                <!-- Menu Button (Mobile) -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Nav Links -->
+                <nav class="hidden md:flex space-x-6">
+                    <a href="/index.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Home</a>
+                    <a href="/pages/admission.html"
+                        class="text-gray-700 hover:text-[#7a7a7a] font-medium">Admissions</a>
+                    <a href="/pages/academics.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Academics</a>
+                    <a href="/pages/faculty.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Faculty</a>
+                    <a href="/pages/gallery.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Gallery</a>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2">
+                <a href="/index.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Home</a>
+                <a href="/pages/admission.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Admissions</a>
+                <a href="/pages/academics.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Academics</a>
+                <a href="/pages/faculty.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Faculty</a>
+                <a href="/pages/gallery.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Gallery</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 pt-12 py-5 space-y-5 text-gray-800">
+
+        <!-- Title -->
+        <div class="text-center">
+            <h1 class="text-4xl font-bold titleFont text-[#2d4944] drop-shadow-lg">Admissions - 2025</h1>
+            <p class="text-lg text-gray-600 mt-2">Explore how to join our vibrant academic community.</p>
+        </div>
+
+
+        <div class="flex md:flex-row flex-col justify-between w-full gap-5">
+            <!-- Section: Admission Process -->
+            <section
+                class="bg-white rounded-xl md:w-[50%] shadow-md p-6 border border-gray-200 hover:shadow-xl transition">
+                <h2 class="text-2xl font-semibold text-blue-700 border-b pb-2 mb-4">Admission Process</h2>
+                <ol class="list-decimal list-inside space-y-2 text-gray-700 leading-relaxed">
+                    <li>Register on our <a href="#" class="text-blue-500 underline hover:text-blue-700">official
+                            admission
+                            portal</a>. <span>(It will open soon)</span> </li>
+                    <li>Upload necessary documents (DOB certificate, school report, etc.).</li>
+                    <li>Appear for the entrance test (if applicable).</li>
+                    <li>Check results and confirm seat within the deadline.</li>
+                </ol>
+            </section>
+
+            <!-- Section: Eligibility -->
+            <section
+                class="bg-white rounded-xl md:w-[50%] shadow-md p-6 border border-gray-200 hover:shadow-xl transition">
+                <h2 class="text-2xl font-semibold text-green-700 border-b pb-2 mb-4">Eligibility Criteria</h2>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 leading-relaxed">
+                    <li>Student must reside in the district.</li>
+                    <li>For Class VI: Age should be between 9–13 years.</li>
+                    <li>Must be currently enrolled in a government-recognized school.</li>
+                    <li>75% seats reserved for rural candidates.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Section: Important Dates -->
+        <section class="bg-white rounded-xl shadow-md p-6 border border-gray-200 hover:shadow-xl transition">
+            <h2 class="text-2xl font-semibold text-purple-700 border-b pb-2 mb-4">Important Dates</h2>
+            <div class="grid md:grid-cols-2 gap-4 mt-4">
+                <div class="p-4 bg-purple-50 border-l-4 border-purple-400 shadow-sm">
+                    <strong>Registration Opens:</strong> 15th July 2025
+                </div>
+                <div class="p-4 bg-purple-50 border-l-4 border-purple-400 shadow-sm">
+                    <strong>Deadline to Apply:</strong> 10th September 2025
+                </div>
+                <div class="p-4 bg-purple-50 border-l-4 border-purple-400 shadow-sm">
+                    <strong>Entrance Test:</strong> 25th September 2025
+                </div>
+                <div class="p-4 bg-purple-50 border-l-4 border-purple-400 shadow-sm">
+                    <strong>Merit List:</strong> 5th October 2025
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Downloadable Forms -->
+        <section class="bg-white rounded-xl shadow-md p-6 border border-gray-200 hover:shadow-xl transition">
+            <h2 class="text-2xl font-semibold text-yellow-500 border-b pb-2 mb-4">Admission Details</h2>
+            <ul class="space-y-3 text-blue-700 text-lg">
+                <li>
+                    <a href="#" onclick="admissionForm()" class="hover:text-blue-900 flex items-center gap-2">
+                        📄 Admission Form (PDF)
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/admission.html" onclick="eligibility()"
+                        class="hover:text-blue-900 flex items-center gap-2">
+                        📄 Eligibility for Admission in 2025 (PDF)
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/admission.html" onclick="guide()"
+                        class="hover:text-blue-900 flex items-center gap-2">
+                        📄 Admission Guide (PDF)
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- Section: Inquiry Form -->
+        <section class="bg-white rounded-xl shadow-md p-6 border border-gray-200 hover:shadow-xl transition">
+            <h2 class="text-2xl font-semibold text-red-700 border-b pb-2 mb-4">User Inquiry </h2>
+            <form id="admissionForm" class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Full Name"
+                        class="border p-2 rounded-md w-full focus:outline-blue-400" required>
+                    <input type="email" placeholder="Email Address"
+                        class="border p-2 rounded-md w-full focus:outline-blue-400" required>
+                    <input type="text" placeholder="Phone Number"
+                        class="border p-2 rounded-md w-full focus:outline-blue-400" required>
+                    <input type="text" placeholder="Interested Class" class="border p-2 rounded-md w-full">
+                </div>
+                <textarea rows="4" placeholder="Your Query..."
+                    class="border p-2 rounded-md w-full focus:outline-blue-400" required></textarea>
+                <button type="submit"
+                    class="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700 transition-all shadow-md hover:shadow-lg">
+                    Submit Inquiry
+                </button>
+            </form>
+            <p id="formResponse" class="text-green-600 font-medium mt-3 hidden">✅ Thank you! We'll contact you shortly.
+            </p>
+        </section>
+    </div>
+
+
+    <footer class="bg-[#2d4944] text-amber-50 pt-10 pb-3 mt-4">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 md:gap-30 gap-10">
+
+            <!-- About -->
+            <div class=" md:w-xs">
+                <h3 class="text-xl font-semibold titleFont mb-3">J.N.V. Kolhapur</h3>
+                <p class="text-sm text-justify leading-relaxed text-amber-100">
+                    Jawahar Navodaya Vidyalaya, Kagal (Kolhapur) is committed to providing quality education and
+                    holistic
+                    development.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold titleFont mb-3 md:ml-20">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/index.html" class="hover:underline hover:text-amber-200 md:ml-20">Home</a></li>
+                    <li><a href="/pages/admission.html"
+                            class="hover:underline hover:text-amber-200 md:ml-20">Admissions</a>
+                    </li>
+                    <li><a href="/pages/academics.html"
+                            class="hover:underline hover:text-amber-200 md:ml-20">Academics</a>
+                    </li>
+                    <li><a href="/pages/events.html" class="hover:underline hover:text-amber-200 md:ml-20">Events</a>
+                    </li>
+                    <li><a href="/pages/gallery.html" class="hover:underline hover:text-amber-200 md:ml-20">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-xl font-semibold titleFont mb-3">Contact Us</h3>
+                <ul class="text-sm space-y-2">
+                    <li><span class="font-semibold">📍 Address:</span> Kagal, Kolhapur, Maharashtra</li>
+                    <li><span class="font-semibold">✉️ Email:</span> <a href="mailto:jnvk@example.com"
+                            class="hover:underline text-amber-200">jnvk@example.com</a></li>
+                    <li><span class="font-semibold">📞 Phone:</span> <a href="tel:+911234567890"
+                            class="hover:underline text-amber-200">+91 12345 67890</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-xl font-semibold titleFont mb-3">Follow Us</h3>
+                <div class="flex gap-4 mt-2">
+                    <a href="https://facebook.com" target="_blank" class="hover:text-blue-400 transition">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12c0-5.5228-4.4772-10-10-10S2 6.4772 2 12c0 4.9911 3.6572 9.1283 8.438 9.8789v-6.9883H7.8984v-2.8906h2.5396V9.7969c0-2.5075 1.4926-3.8906 3.7774-3.8906 1.0942 0 2.2382.1953 2.2382.1953v2.4609h-1.2612c-1.2435 0-1.6302.7711-1.6302 1.5625v1.875h2.7735l-.4435 2.8906h-2.33v6.9883C18.3428 21.1283 22 16.9911 22 12z" />
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-pink-400 transition">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zM4.5 7.75A3.25 3.25 0 0 1 7.75 4.5h8.5a3.25 3.25 0 0 1 3.25 3.25v8.5a3.25 3.25 0 0 1-3.25 3.25h-8.5a3.25 3.25 0 0 1-3.25-3.25v-8.5zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 1.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm4.75-.75a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="hover:text-cyan-400 transition">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 0 0 1.88-2.35 8.36 8.36 0 0 1-2.71 1.03A4.23 4.23 0 0 0 11.07 9a12 12 0 0 1-8.7-4.41 4.22 4.22 0 0 0 1.3 5.65A4.22 4.22 0 0 1 2.8 9v.05a4.23 4.23 0 0 0 3.39 4.14 4.3 4.3 0 0 1-1.91.07 4.23 4.23 0 0 0 3.95 2.93A8.48 8.48 0 0 1 2 19.54a11.95 11.95 0 0 0 6.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.36-.01-.53A8.36 8.36 0 0 0 22.46 6z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-xs text-amber-100 mt-8 border-t border-amber-300 pt-4">
+            &copy; 2025 Jawahar Navodaya Vidyalaya, Kolhapur. All rights reserved.
+        </div>
+    </footer>
+    </div>
+    <script>
+        // Toggle mobile menu
+        document
+            .getElementById("menu-toggle")
+            .addEventListener("click", function () {
+                const menu = document.getElementById("mobile-menu");
+                menu.classList.toggle("hidden");
+            });
+        const form = document.getElementById("admissionForm");
+        const response = document.getElementById("formResponse");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            response.classList.remove("hidden");
+            form.reset();
+            response.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        function admissionForm() {
+            const link = document.createElement("a");
+            link.href = "/public/admission-form.pdf";
+            link.download = "admission-form.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function eligibility() {
+            const link = document.createElement("a");
+            link.href = "/public/eligibility.pdf";
+            link.download = "eligibility.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function guide() {
+            const link = document.createElement("a");
+            link.href = "/public/guide.pdf";
+            link.download = "guide.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+
+</html>

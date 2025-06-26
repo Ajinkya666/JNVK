@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JNVK</title>
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <style>
+        .titleFont {
+            font-family: gstatic;
+        }
+
+        .gradient-transition {
+            background-size: 200% 100%;
+            background-position: left center;
+            transition: background-position 0.5s ease-in-out;
+        }
+
+        .gradient-transition:hover {
+            background-position: right center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl h-9 bg-[#2d4944] flex justify-end items-center px-3">
+            <nav class="flex md:gap-5 gap-3 md:text-base text-xs md:px-5">
+                <a href="/pages/about.html" class="text-amber-50 hover:text-amber-100">About Us</a>
+                <a href="/pages/events.html" class="text-amber-50 hover:text-amber-100">Events</a>
+                <a href="/pages/contact.html" class="text-amber-50 hover:text-amber-100">Contact</a>
+            </nav>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-14">
+                <!-- Logo -->
+                <div
+                    class="flex-shrink-0 text-2xl font-bold flex justify-between titleFont items-center  text-amber-50 text-shadow-lg text-shadow-[#2d4944]">
+                    <img class="h-12 w-12 cursor-pointer " src="/public/symbol.png" alt="" />J.N.V.Kolhapur
+                </div>
+
+                <!-- Menu Button (Mobile) -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Nav Links -->
+                <nav class="hidden md:flex space-x-6">
+                    <a href="/index.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Home</a>
+                    <a href="/pages/admission.html"
+                        class="text-gray-700 hover:text-[#7a7a7a] font-medium">Admissions</a>
+                    <a href="/pages/academics.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Academics</a>
+                    <a href="/pages/faculty.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Faculty</a>
+                    <a href="/pages/gallery.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Gallery</a>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2">
+                <a href="/index.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Home</a>
+                <a href="/pages/admission.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Admissions</a>
+                <a href="/pages/academics.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Academics</a>
+                <a href="/pages/faculty.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Faculty</a>
+                <a href="/pages/gallery.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Gallery</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- section -->
+    <div>
+        <div class="md:text-4xl text-2xl text-center titleFont font-bold pt-6 text-black">
+            ACADEMICS
+        </div>
+
+        <div class=" flex flex-col items-center justify-center py-3">
+            <div class="p-4 flex flex-col justify-center items-center">
+                <div class="md:text-2xl text-center text-lg font-bold pb-2  titleFont md:text-start ">
+                    Curriculum Overview
+                </div>
+                <div
+                    class="relative w-full  flex flex-col md:flex-row md:gap-4 gap-6 px-6 md:px-5 justify-center items-center ">
+                    <div
+                        class="m-2 p-8 px-1 w-[85%] md:w-[35%]  ease-in-out hover:-translate-y-1 hover:scale-105 border-2 border-gray-900 rounded-[4vw] bg-gradient-to-r from-gray-100 to-blue-200 hover:from-[#d7f0ff] hover:to-[#a0d8ff] transition-all duration-500 opacity-90 flex flex-col justify-center items-center ">
+                        <div class="text-lg md:text-xl text-center text-black titleFont font-bold mb-2">
+                            Grades 6–8
+                        </div>
+                        <div class="text-xs md:text-xs text-center text-gray-950 font-sans">
+                            Foundation in core subjects with integrated art, music, and physical education.
+                        </div>
+                    </div>
+
+                    <div
+                        class="m-2 p-8 px-1 w-[85%] md:w-[35%]  ease-in-out hover:-translate-y-1 hover:scale-105 border-2 border-gray-900 rounded-[4vw] bg-gradient-to-r from-gray-100 to-blue-200 hover:from-[#d7f0ff] hover:to-[#a0d8ff] transition-all duration-500 opacity-90 flex flex-col justify-center items-center ">
+                        <div class="text-lg md:text-xl text-center text-black titleFont font-bold mb-2">
+                            Grades 9–10
+                        </div>
+                        <div class="text-xs md:text-xs text-center text-gray-950 font-sans">
+                            CBSE curriculum with emphasis on Science, Math, Social Studies, and Languages.
+                        </div>
+                    </div>
+
+                    <div
+                        class="m-2 p-8 px-1 w-[85%] md:w-[35%]  ease-in-out hover:-translate-y-1 hover:scale-105 border-2 border-gray-900 rounded-[4vw] bg-gradient-to-r from-gray-100 to-blue-200 hover:from-[#d7f0ff] hover:to-[#a0d8ff] transition-all duration-500 opacity-90 flex flex-col justify-center items-center ">
+                        <div class="text-lg md:text-xl text-center text-black titleFont font-bold mb-2">
+                            Grades 11–12
+                        </div>
+                        <div class="text-xs md:text-xs text-center text-gray-950 font-sans">
+                            Streams include Science (PCM/PCB). Preparing for competitive exams.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex md:flex-row flex-col">
+            <div class="md:w-[30%] h-[100%] w-full flex flex-col items-center justify-center p-3 gap-5">
+                <div class="w-5/6 flex flex-col justify-center items-center gap-2">
+                    <h2
+                        class="titlefont font-bold text-[#373f3d] text-shadow-md titleFont text-center text-shadow-amber-50 md:text-xl text-lg">
+                        Structure and Syllabus
+                    </h2>
+                    <div class="gap-1 w-full mt-4 flex items-center flex-col">
+                        <div class="w-[90%] text-center"><a href="javascript:void(0)" onclick="showSyllabus('6')"
+                                class="block py-2 bg-gray-100 text-gray-700 hover:bg-gray-200 rounded">6th Standard</a>
+                        </div>
+                        <div class="w-[90%] text-center"><a href="javascript:void(0)" onclick="showSyllabus('7')"
+                                class="block py-2 bg-gray-100 text-gray-700 hover:bg-gray-200 rounded">7th Standard</a>
+                        </div>
+                        <div class="w-[90%] text-center"><a href="javascript:void(0)" onclick="showSyllabus('8')"
+                                class="block py-2 bg-gray-100 text-gray-700 hover:bg-gray-200 rounded">8th Standard</a>
+                        </div>
+                        <div class="w-[90%] text-center"><a href="javascript:void(0)" onclick="showSyllabus('9')"
+                                class="block py-2 bg-gray-100 text-gray-700 hover:bg-gray-200 rounded">9th Standard</a>
+                        </div>
+                        <div class="w-[90%] text-center"><a href="javascript:void(0)" onclick="showSyllabus('10')"
+                                class="block py-2 bg-gray-100 text-gray-700 hover:bg-gray-200 rounded">10th Standard</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="hover:underline text-blue-500">
+                    <a href="/pages/events.html">Check out Events..</a>
+                </div>
+            </div>
+            <div class="md:w-[70%] w-full opacity-80">
+                <div
+                    class="relative z-10 w-full h-full px-4 bg-[url(/public/academics-bg.png)] bg-cover bg-center bg-no-repeat rounded-lg shadow-md">
+                    <div class="flex flex-col w-full py-6">
+
+                        <!-- CLASS SYLLABUS TEMPLATE -->
+                        <div id="syllabus-6" class="syllabus-section px-4">
+                            <h2 class="text-2xl md:text-3xl font-bold underline text-white titleFont mb-4 text-center">
+                                Subject & Syllabus Details for Class 6
+                            </h2>
+                            <ul class="md:space-y-8 space-y-4 md:pl-5">
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong
+                                        class="text-[#5e5671] text-shadow-sm text-shadow-black">Mathematics:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Science:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Social
+                                        Science:</strong> <span class="hover:underline" onclick="samplePDF()">Check out
+                                        Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Marathi:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Hindi:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                            </ul>
+                            <p class="text-sm mt-4 text-[#000000] text-center ">(Note: Syllabus is for academic year
+                                2025–26)</p>
+                        </div>
+
+                        <div id="syllabus-7" class="syllabus-section px-4">
+                            <h2 class="text-2xl md:text-3xl font-bold underline text-white titleFont mb-4 text-center">
+                                Subject & Syllabus Details for Class 7
+                            </h2>
+                            <ul class="md:space-y-8 space-y-4 md:pl-5">
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Mathematics &
+                                        Statastics:</strong> <span class="hover:underline" onclick="samplePDF()">Check
+                                        out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Science:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Social
+                                        Science:</strong> <span class="hover:underline" onclick="samplePDF()">Check out
+                                        Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Marathi
+                                        Balbharati:</strong> <span class="hover:underline" onclick="samplePDF()">Check
+                                        out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Hindi
+                                        Grammer:</strong> <span class="hover:underline" onclick="samplePDF()">Check out
+                                        Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                            </ul>
+                            <p class="text-sm mt-4 text-[#000000] text-center ">(Note: Syllabus is for academic year
+                                2025–26)</p>
+                        </div>
+
+
+
+                        <div id="syllabus-8" class="syllabus-section px-4">
+                            <h2 class="text-2xl md:text-3xl font-bold underline text-white titleFont mb-4 text-center">
+                                Subject & Syllabus Details for Class 8
+                            </h2>
+                            <ul class="md:space-y-8 space-y-4 md:pl-5">
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Mathematics &
+                                        Probabilty:</strong> <span class="hover:underline" onclick="samplePDF()">Check
+                                        out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Science:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Social
+                                        Science:</strong> <span class="hover:underline" onclick="samplePDF()">Check out
+                                        Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Marathi:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Hindi:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                            </ul>
+                            <p class="text-sm mt-4 text-[#000000] text-center ">(Note: Syllabus is for academic year
+                                2025–26)</p>
+                        </div>
+
+                        <div id="syllabus-9" class="syllabus-section px-4">
+                            <h2 class="text-2xl md:text-3xl font-bold underline text-white titleFont mb-4 text-center">
+                                Subject & Syllabus Details for Class 9
+                            </h2>
+                            <ul class="md:space-y-8 space-y-4 md:pl-5">
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong
+                                        class="text-[#5e5671] text-shadow-sm text-shadow-black">Mathematics:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Physics:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Chemistry:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Biology:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Hindi:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                            </ul>
+                            <p class="text-sm mt-4 text-[#000000] text-center ">(Note: Syllabus is for academic year
+                                2025–26)</p>
+                        </div>
+
+                        <div id="syllabus-10" class="syllabus-section px-4">
+                            <h2 class="text-2xl md:text-3xl font-bold underline text-white titleFont mb-4 text-center">
+                                Subject & Syllabus Details for Class 10
+                            </h2>
+                            <ul class="md:space-y-8 space-y-4 md:pl-5">
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong
+                                        class="text-[#5e5671] text-shadow-sm text-shadow-black">Mathematics:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Mathematics
+                                        2:</strong> <span class="hover:underline" onclick="samplePDF()">Check out
+                                        Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Physics:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Chemestry:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                                <li class="flex items-center gap-2 text-blue-200 hover:text-blue-400">
+                                    <strong class="text-[#5e5671] text-shadow-sm text-shadow-black">Biology:</strong>
+                                    <span class="hover:underline" onclick="samplePDF()">Check out Syllabus</span>
+                                    <div class="bg-[url(/public/download-icon.png)] h-4 w-4 bg-center bg-cover bg-no-repeat"
+                                        onclick="samplePDF()"></div>
+                                </li>
+                            </ul>
+                            <p class="text-sm mt-4 text-[#000000] text-center ">(Note: Syllabus is for academic year
+                                2025–26)</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="p-6 md:p-10 bg-white flex justify-center flex-col items-center">
+        <h2 class="md:text-2xl text-center text-lg font-bold pb-2  titleFont ">Assessment & Evaluation</h2>
+        <p class="text-gray-700 mt-1 text-center">We follow the CBSE's Continuous and Comprehensive Evaluation (CCE)
+            system for
+            lower
+            classes and summative assessments for higher classes. Assessments includes:</p>
+        <div class="mt-2 flex p-4  flex-col w-[80%] items-center justify-center ">
+            <div class=" flex md:flex-row flex-col gap-10 p-5 items-center w-full">
+                <div class="w-full md:w-1/2 text-lg py-7 text-center rounded shadow-md cursor-pointer
+                  gradient-transition text-gray-800
+                  bg-gradient-to-r from-gray-200 to-blue-200">
+                    Unit Tests & Class Tests
+                </div>
+                <div class="w-full md:w-1/2 text-lg py-7 text-center rounded shadow-md cursor-pointer
+                  gradient-transition text-gray-800
+                  bg-gradient-to-r from-gray-200 to-blue-200">
+                    Mid-Term and Final Exams
+                </div>
+            </div>
+            <div class="flex md:flex-row flex-col gap-10 p-5 items-center w-full">
+                <div class="w-full md:w-1/2 text-lg py-7 text-center rounded shadow-md cursor-pointer
+                  gradient-transition text-gray-800
+                  bg-gradient-to-r from-gray-200 to-blue-200">
+                    Project Work and Practical Exams
+                </div>
+
+                <div class="w-full md:w-1/2 text-lg py-7 text-center rounded shadow-md cursor-pointer
+                  gradient-transition text-gray-800
+                  bg-gradient-to-r from-gray-200 to-blue-200">
+                    Regular Assignments & Oral Assessments
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <footer class="bg-[#2d4944] text-amber-50 pt-10 pb-3 mt-4">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 md:gap-30 gap-10">
+
+                <!-- About -->
+                <div class=" md:w-xs">
+                    <h3 class="text-xl font-semibold titleFont mb-3">J.N.V. Kolhapur</h3>
+                    <p class="text-sm text-justify leading-relaxed text-amber-100">
+                        Jawahar Navodaya Vidyalaya, Kagal (Kolhapur) is committed to providing quality education and
+                        holistic
+                        development.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold titleFont mb-3 md:ml-20">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/index.html" class="hover:underline hover:text-amber-200 md:ml-20">Home</a>
+                        </li>
+                        <li><a href="/pages/admission.html"
+                                class="hover:underline hover:text-amber-200 md:ml-20">Admissions</a>
+                        </li>
+                        <li><a href="/pages/academics.html"
+                                class="hover:underline hover:text-amber-200 md:ml-20">Academics</a>
+                        </li>
+                        <li><a href="/pages/events.html"
+                                class="hover:underline hover:text-amber-200 md:ml-20">Events</a></li>
+                        <li><a href="/pages/gallery.html"
+                                class="hover:underline hover:text-amber-200 md:ml-20">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-semibold titleFont mb-3">Contact Us</h3>
+                    <ul class="text-sm space-y-2">
+                        <li><span class="font-semibold">📍 Address:</span> Kagal, Kolhapur, Maharashtra</li>
+                        <li><span class="font-semibold">✉️ Email:</span> <a href="mailto:jnvk@example.com"
+                                class="hover:underline text-amber-200">jnvk@example.com</a></li>
+                        <li><span class="font-semibold">📞 Phone:</span> <a href="tel:+911234567890"
+                                class="hover:underline text-amber-200">+91 12345 67890</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-xl font-semibold titleFont mb-3">Follow Us</h3>
+                    <div class="flex gap-4 mt-2">
+                        <a href="https://facebook.com" target="_blank" class="hover:text-blue-400 transition">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12c0-5.5228-4.4772-10-10-10S2 6.4772 2 12c0 4.9911 3.6572 9.1283 8.438 9.8789v-6.9883H7.8984v-2.8906h2.5396V9.7969c0-2.5075 1.4926-3.8906 3.7774-3.8906 1.0942 0 2.2382.1953 2.2382.1953v2.4609h-1.2612c-1.2435 0-1.6302.7711-1.6302 1.5625v1.875h2.7735l-.4435 2.8906h-2.33v6.9883C18.3428 21.1283 22 16.9911 22 12z" />
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="hover:text-pink-400 transition">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zM4.5 7.75A3.25 3.25 0 0 1 7.75 4.5h8.5a3.25 3.25 0 0 1 3.25 3.25v8.5a3.25 3.25 0 0 1-3.25 3.25h-8.5a3.25 3.25 0 0 1-3.25-3.25v-8.5zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 1.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm4.75-.75a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="hover:text-cyan-400 transition">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 0 0 1.88-2.35 8.36 8.36 0 0 1-2.71 1.03A4.23 4.23 0 0 0 11.07 9a12 12 0 0 1-8.7-4.41 4.22 4.22 0 0 0 1.3 5.65A4.22 4.22 0 0 1 2.8 9v.05a4.23 4.23 0 0 0 3.39 4.14 4.3 4.3 0 0 1-1.91.07 4.23 4.23 0 0 0 3.95 2.93A8.48 8.48 0 0 1 2 19.54a11.95 11.95 0 0 0 6.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.36-.01-.53A8.36 8.36 0 0 0 22.46 6z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center text-xs text-amber-100 mt-8 border-t border-amber-300 pt-4">
+                &copy; 2025 Jawahar Navodaya Vidyalaya, Kolhapur. All rights reserved.
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <script>
+        // Toggle mobile menu
+        document
+            .getElementById("menu-toggle")
+            .addEventListener("click", function () {
+                const menu = document.getElementById("mobile-menu");
+                menu.classList.toggle("hidden");
+            });
+
+        function showSyllabus(className) {
+            const allSyllabus = document.querySelectorAll('[id^="syllabus-"]');
+            allSyllabus.forEach((div) => {
+                div.style.display = 'none';
+            });
+            const selected = document.getElementById(`syllabus-${className}`);
+            if (selected) selected.style.display = 'block';
+        }
+
+        // Show default (class 6) on load
+        window.onload = function () {
+            showSyllabus('6');
+        };
+
+        function samplePDF() {
+            const link = document.createElement("a");
+            link.href = "/public/samplePDF.pdf";
+            link.download = "samplePDF.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+
+</html>

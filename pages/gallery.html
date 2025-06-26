@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JNVK</title>
-    <link href="/src/output.css" rel="stylesheet">
+    <link href="../src/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -21,57 +21,50 @@
 
 <body>
     <header class="bg-white shadow-md">
-        <div class="max-w-7xl h-9 bg-[#2d4944] flex justify-end items-center px-3">
-            <nav class="flex md:gap-5 gap-3 md:text-base text-xs md:px-5">
-                <a href="/pages/about.html" class="text-amber-50 hover:text-amber-100">About Us</a>
-                <a href="/pages/events.html" class="text-amber-50 hover:text-amber-100">Events</a>
-                <a href="/pages/contact.html" class="text-amber-50 hover:text-amber-100">Contact</a>
-            </nav>
+    <div class="max-w-7xl h-9 bg-[#2d4944] flex justify-end items-center px-3">
+      <nav class="flex md:gap-5 gap-3 md:text-base text-xs md:px-5">
+        <a href="about.html" class="text-amber-50 hover:text-amber-100">About Us</a>
+        <a href="events.html" class="text-amber-50 hover:text-amber-100">Events</a>
+        <a href="contact.html" class="text-amber-50 hover:text-amber-100">Contact</a>
+      </nav>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-14">
+        <!-- Logo -->
+        <div
+          class="flex-shrink-0 text-2xl font-bold flex justify-between titleFont items-center  text-amber-50 text-shadow-lg text-shadow-[#2d4944]">
+          <img class="h-12 w-12 cursor-pointer " src="../public/symbol.png" alt="" />J.N.V.Kolhapur
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-14">
-                <!-- Logo -->
-                <div
-                    class="flex-shrink-0 text-2xl font-bold flex justify-between titleFont items-center  text-amber-50 text-shadow-lg text-shadow-[#2d4944]">
-                    <img class="h-12 w-12 cursor-pointer " src="/public/symbol.png" alt="" />J.N.V.Kolhapur
-                </div>
 
-                <!-- Menu Button (Mobile) -->
-                <div class="md:hidden">
-                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-
-                <!-- Nav Links -->
-                <nav class="hidden md:flex space-x-6">
-                    <a href="/index.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Home</a>
-                    <a href="/pages/admission.html"
-                        class="text-gray-700 hover:text-[#7a7a7a] font-medium">Admissions</a>
-                    <a href="/pages/academics.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Academics</a>
-                    <a href="/pages/faculty.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Faculty</a>
-                    <a href="/pages/gallery.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Gallery</a>
-                </nav>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2">
-                <a href="/index.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Home</a>
-                <a href="/pages/admission.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Admissions</a>
-                <a href="/pages/academics.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Academics</a>
-                <a href="/pages/faculty.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Faculty</a>
-                <a href="/pages/gallery.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Gallery</a>
-            </div>
+        <!-- Menu Button (Mobile) -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
-    </header>
 
+        <!-- Nav Links -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="../index.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Home</a>
+          <a href="admission.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Admissions</a>
+          <a href="academics.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Academics</a>
+          <a href="faculty.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Faculty</a>
+          <a href="pages/gallery.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Gallery</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2">
+        <a href="../index.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Home</a>
+        <a href="admission.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Admissions</a>
+        <a href="academics.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Academics</a>
+        <a href="faculty.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Faculty</a>
+        <a href="gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Gallery</a>
+      </div>
+    </div>
+  </header>
     <!-- FILTER SECTION -->
     <div class="flex flex-col md:flex-row justify-between items-center px-6 mt-10 gap-4">
         <div class=" md:w-[65%] flex items-center justify-center">
@@ -100,157 +93,157 @@
     <div id="galleryGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 p-6 items-center">
         <!-- Each image -->
         <div class="cursor-pointer" data-event="sports" data-year="2024" data-date="2024-01-15">
-            <img src="/public/gallary/photo (1).jpg" alt="Photo"
+            <img src="../public/gallary/photo (1).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="sports" data-year="2024" data-date="2024-01-15">
-            <img src="/public/gallary/photo (2).jpg" alt="Photo"
+            <img src="../public/gallary/photo (2).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="annual" data-year="2023" data-date="2023-12-25">
-            <img src="/public/gallary/photo (3).jpg" alt="Photo"
+            <img src="../public/gallary/photo (3).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="annual" data-year="2023" data-date="2023-12-25">
-            <img src="/public/gallary/photo (4).jpg" alt="Photo"
+            <img src="../public/gallary/photo (4).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="sports" data-year="2024" data-date="2024-03-01">
-            <img src="/public/gallary/photo (5).jpg" alt="Photo"
+            <img src="../public/gallary/photo (5).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="annual" data-year="2024" data-date="2024-03-01">
-            <img src="/public/gallary/photo (6).jpg" alt="Photo"
+            <img src="../public/gallary/photo (6).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="cultural" data-year="2023" data-date="2023-11-10">
-            <img src="/public/gallary/photo (7).jpg" alt="Photo"
+            <img src="../public/gallary/photo (7).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="science" data-year="2024" data-date="2024-02-14">
-            <img src="/public/gallary/photo (8).jpg" alt="Photo"
+            <img src="../public/gallary/photo (8).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="sports" data-year="2024" data-date="2024-01-26">
-            <img src="/public/gallary/photo (9).jpg" alt="Photo"
+            <img src="../public/gallary/photo (9).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="annual" data-year="2022" data-date="2022-12-20">
-            <img src="/public/gallary/photo (10).jpg" alt="Photo"
+            <img src="../public/gallary/photo (10).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="farewell" data-year="2023" data-date="2023-04-10">
-            <img src="/public/gallary/photo (11).jpg" alt="Photo"
+            <img src="../public/gallary/photo (11).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="science" data-year="2023" data-date="2023-02-28">
-            <img src="/public/gallary/photo (12).jpg" alt="Photo"
+            <img src="../public/gallary/photo (12).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="sports" data-year="2023" data-date="2023-01-15">
-            <img src="/public/gallary/photo (13).jpg" alt="Photo"
+            <img src="../public/gallary/photo (13).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="independence" data-year="2022" data-date="2022-08-15">
-            <img src="/public/gallary/photo (14).jpg" alt="Photo"
+            <img src="../public/gallary/photo (14).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="cultural" data-year="2024" data-date="2024-09-05">
-            <img src="/public/gallary/photo (15).jpg" alt="Photo"
+            <img src="../public/gallary/photo (15).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="farewell" data-year="2024" data-date="2024-04-02">
-            <img src="/public/gallary/photo (16).jpg" alt="Photo"
+            <img src="../public/gallary/photo (16).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="annual" data-year="2022" data-date="2022-12-19">
-            <img src="/public/gallary/photo (17).jpg" alt="Photo"
+            <img src="../public/gallary/photo (17).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="science" data-year="2023" data-date="2023-02-14">
-            <img src="/public/gallary/photo (18).jpg" alt="Photo"
+            <img src="../public/gallary/photo (18).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="independence" data-year="2023" data-date="2023-08-15">
-            <img src="/public/gallary/photo (19).jpg" alt="Photo"
+            <img src="../public/gallary/photo (19).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="cultural" data-year="2023" data-date="2023-09-01">
-            <img src="/public/gallary/photo (20).jpg" alt="Photo"
+            <img src="../public/gallary/photo (20).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="farewell" data-year="2023" data-date="2023-04-05">
-            <img src="/public/gallary/photo (21).jpg" alt="Photo"
+            <img src="../public/gallary/photo (21).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="sports" data-year="2023" data-date="2023-01-20">
-            <img src="/public/gallary/photo (22).jpg" alt="Photo"
+            <img src="../public/gallary/photo (22).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="cultural" data-year="2022" data-date="2022-09-01">
-            <img src="/public/gallary/photo (23).jpg" alt="Photo"
+            <img src="../public/gallary/photo (23).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="science" data-year="2022" data-date="2022-02-28">
-            <img src="/public/gallary/photo (24).jpg" alt="Photo"
+            <img src="../public/gallary/photo (24).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="independence" data-year="2024" data-date="2024-08-15">
-            <img src="/public/gallary/photo (25).jpg" alt="Photo"
+            <img src="../public/gallary/photo (25).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="farewell" data-year="2024" data-date="2024-04-05">
-            <img src="/public/gallary/photo (26).jpg" alt="Photo"
+            <img src="../public/gallary/photo (26).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="sports" data-year="2024" data-date="2024-01-10">
-            <img src="/public/gallary/photo (27).jpg" alt="Photo"
+            <img src="../public/gallary/photo (27).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="cultural" data-year="2023" data-date="2023-10-01">
-            <img src="/public/gallary/photo (28).jpg" alt="Photo"
+            <img src="../public/gallary/photo (28).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="science" data-year="2024" data-date="2024-02-28">
-            <img src="/public/gallary/photo (29).jpg" alt="Photo"
+            <img src="../public/gallary/photo (29).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="annual" data-year="2023" data-date="2023-12-22">
-            <img src="/public/gallary/photo (30).jpg" alt="Photo"
+            <img src="../public/gallary/photo (30).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
         <div class="cursor-pointer" data-event="farewell" data-year="2022" data-date="2022-04-05">
-            <img src="/public/gallary/photo (31).jpg" alt="Photo"
+            <img src="../public/gallary/photo (31).jpg" alt="Photo"
                 class="rounded md:h-35 h-25 md:w-60 w-40 shadow hover:scale-105 transition"
                 onclick="openModal(this.src)">
         </div>
@@ -277,21 +270,17 @@
 
             <!-- Quick Links -->
             <div>
-                <h3 class="text-xl font-semibold titleFont mb-3 md:ml-20">Quick Links</h3>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="/index.html" class="hover:underline hover:text-amber-200 md:ml-20">Home</a></li>
-                    <li><a href="/pages/admission.html"
-                            class="hover:underline hover:text-amber-200 md:ml-20">Admissions</a>
-                    </li>
-                    <li><a href="/pages/academics.html"
-                            class="hover:underline hover:text-amber-200 md:ml-20">Academics</a>
-                    </li>
-                    <li><a href="/pages/events.html" class="hover:underline hover:text-amber-200 md:ml-20">Events</a>
-                    </li>
-                    <li><a href="/pages/gallery.html" class="hover:underline hover:text-amber-200 md:ml-20">Gallery</a>
-                    </li>
-                </ul>
-            </div>
+          <h3 class="text-xl font-semibold titleFont mb-3 md:ml-20">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../index.html" class="hover:underline hover:text-amber-200 md:ml-20">Home</a></li>
+            <li><a href="admission.html" class="hover:underline hover:text-amber-200 md:ml-20">Admissions</a>
+            </li>
+            <li><a href="academics.html" class="hover:underline hover:text-amber-200 md:ml-20">Academics</a>
+            </li>
+            <li><a href="events.html" class="hover:underline hover:text-amber-200 md:ml-20">Events</a></li>
+            <li><a href="gallery.html" class="hover:underline hover:text-amber-200 md:ml-20">Gallery</a></li>
+          </ul>
+        </div>
 
             <!-- Contact Info -->
             <div>

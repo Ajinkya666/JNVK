@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JNVK</title>
-    <link href="/src/output.css" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="src/output.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -20,56 +21,50 @@
 
 <body>
     <header class="bg-white shadow-md">
-        <div class="max-w-7xl h-9 bg-[#2d4944] flex justify-end items-center px-3">
-            <nav class="flex md:gap-5 gap-3 md:text-base text-xs md:px-5">
-                <a href="/pages/about.html" class="text-amber-50 hover:text-amber-100">About Us</a>
-                <a href="/pages/events.html" class="text-amber-50 hover:text-amber-100">Events</a>
-                <a href="/pages/contact.html" class="text-amber-50 hover:text-amber-100">Contact</a>
-            </nav>
+    <div class="max-w-7xl h-9 bg-[#2d4944] flex justify-end items-center px-3">
+      <nav class="flex md:gap-5 gap-3 md:text-base text-xs md:px-5">
+        <a href="pages/about.html" class="text-amber-50 hover:text-amber-100">About Us</a>
+        <a href="pages/events.html" class="text-amber-50 hover:text-amber-100">Events</a>
+        <a href="pages/contact.html" class="text-amber-50 hover:text-amber-100">Contact</a>
+      </nav>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-14">
+        <!-- Logo -->
+        <div
+          class="flex-shrink-0 text-2xl font-bold flex justify-between titleFont items-center  text-amber-50 text-shadow-lg text-shadow-[#2d4944]">
+          <img class="h-12 w-12 cursor-pointer " src="/public/symbol.png" alt="" />J.N.V.Kolhapur
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-14">
-                <!-- Logo -->
-                <div
-                    class="flex-shrink-0 text-2xl font-bold flex justify-between titleFont items-center  text-amber-50 text-shadow-lg text-shadow-[#2d4944]">
-                    <img class="h-12 w-12 cursor-pointer " src="/public/symbol.png" alt="" />J.N.V.Kolhapur
-                </div>
 
-                <!-- Menu Button (Mobile) -->
-                <div class="md:hidden">
-                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-
-                <!-- Nav Links -->
-                <nav class="hidden md:flex space-x-6">
-                    <a href="/index.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Home</a>
-                    <a href="/pages/admission.html"
-                        class="text-gray-700 hover:text-[#7a7a7a] font-medium">Admissions</a>
-                    <a href="/pages/academics.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Academics</a>
-                    <a href="/pages/faculty.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Faculty</a>
-                    <a href="/pages/gallery.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Gallery</a>
-                </nav>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2">
-                <a href="/index.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Home</a>
-                <a href="/pages/admission.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Admissions</a>
-                <a href="/pages/academics.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Academics</a>
-                <a href="/pages/faculty.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Faculty</a>
-                <a href="/pages/gallery.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Gallery</a>
-            </div>
+        <!-- Menu Button (Mobile) -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
-    </header>
+
+        <!-- Nav Links -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Home</a>
+          <a href="pages/admission.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Admissions</a>
+          <a href="pages/academics.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Academics</a>
+          <a href="pages/faculty.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Faculty</a>
+          <a href="pages/gallery.html" class="text-gray-700 hover:text-[#7a7a7a] font-medium">Gallery</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2">
+        <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Home</a>
+        <a href="pages/admission.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Admissions</a>
+        <a href="pages/academics.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Academics</a>
+        <a href="pages/faculty.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Faculty</a>
+        <a href="pages/gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-[#7a7a7a] rounded">Gallery</a>
+      </div>
+    </div>
+  </header>
 
     <div class="max-w-7xl mx-auto px-4 pt-12 py-5 space-y-5 text-gray-800">
 
@@ -192,22 +187,18 @@
             </div>
 
             <!-- Quick Links -->
-            <div>
-                <h3 class="text-xl font-semibold titleFont mb-3 md:ml-20">Quick Links</h3>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="/index.html" class="hover:underline hover:text-amber-200 md:ml-20">Home</a></li>
-                    <li><a href="/pages/admission.html"
-                            class="hover:underline hover:text-amber-200 md:ml-20">Admissions</a>
-                    </li>
-                    <li><a href="/pages/academics.html"
-                            class="hover:underline hover:text-amber-200 md:ml-20">Academics</a>
-                    </li>
-                    <li><a href="/pages/events.html" class="hover:underline hover:text-amber-200 md:ml-20">Events</a>
-                    </li>
-                    <li><a href="/pages/gallery.html" class="hover:underline hover:text-amber-200 md:ml-20">Gallery</a>
-                    </li>
-                </ul>
-            </div>
+        <div>
+          <h3 class="text-xl font-semibold titleFont mb-3 md:ml-20">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:underline hover:text-amber-200 md:ml-20">Home</a></li>
+            <li><a href="pages/admission.html" class="hover:underline hover:text-amber-200 md:ml-20">Admissions</a>
+            </li>
+            <li><a href="pages/academics.html" class="hover:underline hover:text-amber-200 md:ml-20">Academics</a>
+            </li>
+            <li><a href="pages/events.html" class="hover:underline hover:text-amber-200 md:ml-20">Events</a></li>
+            <li><a href="pages/gallery.html" class="hover:underline hover:text-amber-200 md:ml-20">Gallery</a></li>
+          </ul>
+        </div>
 
             <!-- Contact Info -->
             <div>
@@ -272,7 +263,7 @@
 
         function admissionForm() {
             const link = document.createElement("a");
-            link.href = "/public/admission-form.pdf";
+            link.href = "public/admission-form.pdf";
             link.download = "admission-form.pdf";
             document.body.appendChild(link);
             link.click();
@@ -281,7 +272,7 @@
 
         function eligibility() {
             const link = document.createElement("a");
-            link.href = "/public/eligibility.pdf";
+            link.href = "public/eligibility.pdf";
             link.download = "eligibility.pdf";
             document.body.appendChild(link);
             link.click();
@@ -290,7 +281,7 @@
 
         function guide() {
             const link = document.createElement("a");
-            link.href = "/public/guide.pdf";
+            link.href = "public/guide.pdf";
             link.download = "guide.pdf";
             document.body.appendChild(link);
             link.click();
